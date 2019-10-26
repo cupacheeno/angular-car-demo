@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WebApplication.Data;
 using WebApplication.Data.Entities;
+using WebApplication.ViewModels;
 
 namespace WebApplication.Controllers
 {
@@ -15,11 +17,13 @@ namespace WebApplication.Controllers
     {
         private readonly IDataRepository _repository;
         private readonly ILogger<CarsController> _logger;
+        private readonly IMapper _mapper;
 
-        public CarsController(IDataRepository repository, ILogger<CarsController> logger)
+        public CarsController(IDataRepository repository, ILogger<CarsController> logger, IMapper mapper)
         {
             _repository = repository;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -37,25 +41,47 @@ namespace WebApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]Car model)
+        public IActionResult Post([FromBody]CarViewModel model)
         {
             try
             {
-                if(model.Make.MakerId != null)
+                if (ModelState.IsValid)
                 {
-                    Maker manu = _repository.GetMakerById(model.Make.MakerId);
+
+                    var newCar = _mapper.Map<CarViewModel, Car>(model);
+
+                    Maker manu = _repository.GetMakerById(newCar.Make.MakerId);
                     if (manu != null)
                     {
-                        model.Make = manu;
+                        newCar.Make = manu;
                     }
-                }
-                _repository.AddEntity(model);
-                if (_repository.SaveAll())
+                    else
+                    {
+                        return BadRequest($"Make : {newCar.Make.Name} does not exist");
+                    }
+
+                    Model mod = _repository.GetModelById(newCar.Model.ModelId);
+                    if (mod != null)
+                    {
+                        newCar.Model = mod;
+                    }
+                    else
+                    {
+                        return BadRequest($"Model : {newCar.Model.Name} does not exist");
+                    }
+                    _repository.AddEntity(newCar);
+                    if (_repository.SaveAll())
+                    {
+                        return Created($"/api/cars/{newCar.Id}", _mapper.Map<Car,CarViewModel>(newCar));
+                    }
+                    else
+                    {
+                        return BadRequest("Failed to create a car");
+                    }
+                } 
+                else
                 {
-                    return Created($"/api/cars/{model.Id}", model);
-                } else
-                {
-                    return BadRequest("Failed to create a car");
+                    return BadRequest(ModelState);
                 }
             }
             catch (Exception ex)
