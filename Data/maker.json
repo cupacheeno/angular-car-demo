@@ -1,0 +1,42 @@
+[
+  {
+    "MakerId": "f65ae4c5-c7c2-4fb9-8819-252864c451ab",
+    "Name": "Audi"
+  },
+  {
+    "MakerId": "15379269-4d24-4950-b515-192b923de98a",
+    "Name": "Chevrolet"
+  },
+  {
+    "MakerId": "6158dc27-d4c3-4b8b-b5fb-4d6b8559a48a",
+    "Name": "Lamborghini"
+  },
+  {
+    "MakerId": "06bfa3db-256e-44bf-80dc-1e08a7d055eb",
+    "Name": "Mazda"
+  },
+  {
+    "MakerId": "3d8e7bc0-d09a-4d2f-9fae-b9dcacb893f2",
+    "Name": "Chevrolet"
+  },
+  {
+    "MakerId": "c88107ea-1dbf-448b-a490-0d4449c79db9",
+    "Name": "Toyota"
+  },
+  {
+    "MakerId": "2ee69a15-fd1d-4f59-a2d0-46f729d5adec",
+    "Name": "GMC"
+  },
+  {
+    "MakerId": "ac726bba-1c15-418a-a3cc-7d3ace228787",
+    "Name": "Ford"
+  },
+  {
+    "MakerId": "49cb4aad-5bf8-46ec-b1de-9133d6885084",
+    "Name": "Lincoln"
+  },
+  {
+    "MakerId": "cf8e48d2-f1a2-4baa-8a6b-21b8501ab00f",
+    "Name": "Acura"
+  }
+]

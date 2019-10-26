@@ -1,0 +1,162 @@
+[
+  {
+    "ModelId": "ab045dde-4d2a-41d4-bfc5-8fea98ed4f2b",
+    "Name": "RX-7",
+    "Maker": {
+      "MakerId": "06bfa3db-256e-44bf-80dc-1e08a7d055eb",
+      "Name": "Mazda"
+    }
+  },
+  {
+    "ModelId": "b60eefe6-7bc0-48dd-b330-d9d19cbcdaa6",
+    "Name": "Corvette",
+    "Maker": {
+      "MakerId": "15379269-4d24-4950-b515-192b923de98a",
+      "Name": "Chevrolet"
+    }
+  },
+  {
+    "ModelId": "c7e3826e-6d8a-4c0f-9c0f-bbb4b987fcc9",
+    "Name": "Suburban 1500",
+    "Maker": {
+      "MakerId": "15379269-4d24-4950-b515-192b923de98a",
+      "Name": "Chevrolet"
+    }
+  },
+  {
+    "ModelId": "7f90bb44-cad1-48bb-8ba9-8fe9827ec987",
+    "Name": "Laser",
+    "Maker": {
+      "MakerId": "ac726bba-1c15-418a-a3cc-7d3ace228787",
+      "Name": "Ford"
+    }
+  },
+  {
+    "ModelId": "897756c7-0862-45a6-8b1c-e4e6d6fd098e",
+    "Name": "Highlander",
+    "Maker": {
+      "MakerId": "c88107ea-1dbf-448b-a490-0d4449c79db9",
+      "Name": "Toyota"
+    }
+  },
+  {
+    "ModelId": "03945bbb-e5f9-428b-bf5b-b39de3427d9d",
+    "Name": "NSX",
+    "Maker": {
+      "MakerId": "cf8e48d2-f1a2-4baa-8a6b-21b8501ab00f",
+      "Name": "Acura"
+    }
+  },
+  {
+    "ModelId": "1b5a0d0e-f671-4904-a755-71c6b69199bd",
+    "Name": "RX-8",
+    "Maker": {
+      "MakerId": "06bfa3db-256e-44bf-80dc-1e08a7d055eb",
+      "Name": "Mazda"
+    }
+  },
+  {
+    "ModelId": "9c7dabf0-1f96-440f-bc17-e618694ff68c",
+    "Name": "A8",
+    "Maker": {
+      "MakerId": "f65ae4c5-c7c2-4fb9-8819-252864c451ab",
+      "Name": "Audi"
+    }
+  },
+  {
+    "ModelId": "7a498abe-7395-4a1f-b1bc-0780102d4972",
+    "Name": "Aspire",
+    "Maker": {
+      "MakerId": "ac726bba-1c15-418a-a3cc-7d3ace228787",
+      "Name": "Ford"
+    }
+  },
+  {
+    "ModelId": "026428f9-e03e-4f7c-8d4e-7d405df4538b",
+    "Name": "G-Series 1500",
+    "Maker": {
+      "MakerId": "15379269-4d24-4950-b515-192b923de98a",
+      "Name": "Chevrolet"
+    }
+  },
+  {
+    "ModelId": "72894922-ae53-447e-9fd4-49c6d8fa9263",
+    "Name": "E-Series",
+    "Maker": {
+      "MakerId": "ac726bba-1c15-418a-a3cc-7d3ace228787",
+      "Name": "Ford"
+    }
+  },
+  {
+    "ModelId": "448eb519-e06b-4653-9bf4-67c98c216e2b",
+    "Name": "Tahoe",
+    "Maker": {
+      "MakerId": "15379269-4d24-4950-b515-192b923de98a",
+      "Name": "Chevrolet"
+    }
+  },
+  {
+    "ModelId": "10fd8637-44c5-4633-aee4-9acd0b3cec17",
+    "Name": "Navajo",
+    "Maker": {
+      "MakerId": "06bfa3db-256e-44bf-80dc-1e08a7d055eb",
+      "Name": "Mazda"
+    }
+  },
+  {
+    "ModelId": "b864c7a5-073d-4ee3-b5f9-6d80ccf1c081",
+    "Name": "Suburban 2500",
+    "Maker": {
+      "MakerId": "2ee69a15-fd1d-4f59-a2d0-46f729d5adec",
+      "Name": "GMC"
+    }
+  },
+  {
+    "ModelId": "1ca8f8bf-ce41-4dae-b773-0939be98365e",
+    "Name": "Avalon",
+    "Maker": {
+      "MakerId": "c88107ea-1dbf-448b-a490-0d4449c79db9",
+      "Name": "Toyota"
+    }
+  },
+  {
+   "ModelId": "21f63f9c-03ad-44fe-9bc9-263bfdbe3004",
+    "Name": "Town Car",
+    "Maker": {
+      "MakerId": "49cb4aad-5bf8-46ec-b1de-9133d6885084",
+      "Name": "Lincoln"
+    }
+  },
+  {
+    "ModelId": "3c666a32-09c0-48ab-97c7-276fb70ccaab",
+    "Name": "Suburban 2500",
+    "Maker": {
+      "MakerId": "15379269-4d24-4950-b515-192b923de98a",
+      "Name": "Chevrolet"
+    }
+  },
+  {
+    "ModelId": "7b4e13e5-0950-4371-aad5-567b9f7c8d9f",
+    "Name": "Probe",
+    "Maker": {
+      "MakerId": "ac726bba-1c15-418a-a3cc-7d3ace228787",
+      "Name": "Ford"
+    }
+  },
+  {
+    "ModelId": "4e09f472-db9c-40c9-8361-6bd20f414416",
+    "Name": "80",
+    "Maker": {
+      "MakerId": "f65ae4c5-c7c2-4fb9-8819-252864c451ab",
+      "Name": "Audi"
+    }
+  },
+  {
+    "ModelId": "a3023292-b0f7-4628-ae85-4af403cbe574",
+    "Name": "Econoline E150",
+    "Maker": {
+      "MakerId": "ac726bba-1c15-418a-a3cc-7d3ace228787",
+      "Name": "Ford"
+    }
+  }
+]

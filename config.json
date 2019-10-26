@@ -1,0 +1,11 @@
+{
+  "ConnectionStrings": {
+    "WebAppConnectionString": "server=(localdb)\\ProjectsV13;Database=WebAppDb;Integrated Security=true;MultipleActiveResultSets=true"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  }
+}
