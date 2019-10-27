@@ -40,7 +40,8 @@ namespace WebApplication.Data
 
         public IEnumerable<Model> GetAllModels()
         {
-            return _ctx.Models.ToList();
+            return _ctx.Models
+                .Include(mod => mod.Maker).ToList();
         }
 
         public IEnumerable<Motorbike> GetAllMotorbikes()

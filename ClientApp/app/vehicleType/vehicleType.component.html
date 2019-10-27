@@ -1,0 +1,10 @@
+﻿<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h1>Please Select a Vehicle Type</h1>
+        <div class="form-group">
+            <select class="form-control" [(ngModel)]="selectedType" (change)="onSelection()">
+                <option *ngFor="let v of vehicleTypes" [ngValue]="v">{{v.name}}</option>
+            </select>
+        </div>
+    </div>
+</div>
