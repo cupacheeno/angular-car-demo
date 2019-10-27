@@ -43,17 +43,26 @@ namespace WebApplication
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+            app.UseNodeModules();
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello World!");
+            //    });
+            //});
 
-            app.UseEndpoints(x => x.MapControllers());
+            //app.UseEndpoints(x => x.MapControllers());
+            app.UseEndpoints(x =>
+            {
+                x.MapControllerRoute("Fallback",
+                    "{controller}/{action}/{id?}",
+                    new { controller = "App", action = "Index" });
+            });
         }
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using WebApplication.Data.Entities;
@@ -68,6 +69,19 @@ namespace WebApplication.Data
         public bool SaveAll()
         {
             return _ctx.SaveChanges() > 0;
+        }
+
+        public IEnumerable<VehicleType> GetAllTypes()
+        {
+            Type vehicleType = typeof(Vehicle);
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            var types = assembly.GetTypes().Where(t => t.IsSubclassOf(vehicleType));
+            List<VehicleType> vehicleTypes = new List<VehicleType>();
+            foreach (var t in types)
+            {
+                vehicleTypes.Add(new VehicleType() { Name = t.Name });
+            }
+            return vehicleTypes;
         }
     }
 }

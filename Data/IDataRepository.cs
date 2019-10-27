@@ -14,6 +14,7 @@ namespace WebApplication.Data
         IEnumerable<Maker> GetAllMakers();
         IEnumerable<Model> GetAllModels();
         IEnumerable<Model> GetModelsByMaker(Guid makerId);
+        IEnumerable<VehicleType> GetAllTypes();
         Maker GetMakerById(Guid makerId);
         Model GetModelById(Guid modelId);
         bool SaveAll();

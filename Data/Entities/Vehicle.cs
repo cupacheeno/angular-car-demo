@@ -14,4 +14,9 @@ namespace WebApplication.Data.Entities
         public string Engine { get; set; }
         public decimal SalePrice { get; set; }
     }
+
+    public class VehicleType
+    {
+        public string Name { get; set; }
+    }
 }
