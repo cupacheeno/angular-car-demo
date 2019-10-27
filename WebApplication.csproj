@@ -21,4 +21,9 @@
     <Folder Include="wwwroot\ts\" />
   </ItemGroup>
 
+  <Target Name="MyPublishScripts" BeforeTargets="BeforePublish">
+    <Exec Command="npm install"></Exec>
+    <Exec Command="ng build"></Exec>
+  </Target>
+
 </Project>

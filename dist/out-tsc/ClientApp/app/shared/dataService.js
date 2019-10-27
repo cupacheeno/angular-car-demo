@@ -29,6 +29,11 @@ let DataService = class DataService {
             return true;
         }));
     }
+    Submit(newCar) {
+        return this.http.post("/api/cars", newCar).pipe(map(response => {
+            return true;
+        }));
+    }
 };
 DataService = __decorate([
     Injectable()
